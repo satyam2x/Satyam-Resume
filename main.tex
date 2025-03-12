@@ -39,7 +39,7 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
+% Sections formatting - Standardized font size
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
@@ -47,9 +47,9 @@
 % Ensure that generated PDF is machine-readable/ATS parsable
 \pdfgentounicode=1
 
-% Custom commands
+% Custom commands with standardized font sizes
 \newcommand{\resumeItem}[1]{
-  \item\small{
+  \item\normalsize{
     {#1 \vspace{-2pt}}
   }
 }
@@ -57,38 +57,38 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \normalsize\textbf{#1} & \normalsize#2 \\
+      \normalsize\textit{#3} & \normalsize\textit{#4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+      \normalsize\textit{#1} & \normalsize\textit{#2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeEducationHeading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \normalsize\textbf{#1} & \normalsize#2 \\
+      \normalsize\textit{#3} & \normalsize\textit{#4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+      \normalsize#1 & \normalsize#2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeOrganizationHeading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textit{\small #2} \\
-      \textit{\small#3}
+      \normalsize\textbf{#1} & \normalsize\textit{#2} \\
+      \normalsize\textit{#3}
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -109,7 +109,7 @@
 %---------- HEADING ----------
 \begin{center}
     \textbf{\Huge \scshape satyam} \\ \vspace{3pt}
-    \small
+    \normalsize
     \faMobile \hspace{.5pt} \href{tel:6209044237}{+91 6209044237}
     $|$
     \faAt \hspace{.5pt} \href{mailto:satyam964w@gmail.com}{satyam964w@gmail.com}
@@ -119,14 +119,8 @@
     \faGithub \hspace{.5pt} \href{https://github.com/satyam2x}{satyam2x}
     $|$
     \faMapMarker \hspace{.5pt} Hyderabad, India
-\end{center}
 
-% %----------- CAREER OBJECTIVE -----------
-% \section{Career Objective}
-% \vspace{3pt}
-% \resumeSubHeadingListStart
-%     \resumeItem{Aspiring to secure a challenging role in the IT industry where I can leverage my technical expertise, problem-solving abilities, and innovative mindset to drive organizational success. Passionate about developing cutting-edge solutions, optimizing system performance, and enhancing operational efficiency. Committed to continuous learning, adapting to emerging technologies, and contributing meaningfully to a dynamic and growth-oriented work environment.}
-% \resumeSubHeadingListEnd
+\end{center}
 
 %----------- EDUCATION -----------
 \section{Education}
@@ -147,20 +141,16 @@
 \section{Internship}
   \vspace{3pt}
   \resumeSubHeadingListStart
-
   
     \resumeSubheading
       {HighRadius}{Bhubaneswar, India}
       {Highway to HighRadius - Summer Intern}{May 2023 -- July 2023}
         \resumeItemListStart
-    \resumeItem{Created an \textbf{AI-enabled Fintech B2B cloud app}, automating financial workflows and improving analytics accuracy by \textbf{35\%}.}
-    \resumeItem{Built a \textbf{full-stack invoice management system} with an \textbf{ML model}, accurately predicting payment dates with \textbf{85\% accuracy}.}
-    \resumeItem{Worked cross-functionally to analyze complex user needs, optimize \textbf{data models}, and implement \textbf{scalable backend services}.}
-    \resumeItem{Created \textbf{intuitive UI components}, integrated \textbf{ML models}, and ensured smooth \textbf{cloud deployment}, reducing load times by \textbf{25\%}.}
-
+    \resumeItem{Created an \textbf{AI-enabled Fintech B2B cloud full stack} invoice management system with an ML model to predict invoice date with improved analytics accuracy.}
+    \resumeItem{Trained a machine learning model \textbf{with a 70\% - 30\% data split}, achieving predicting payment \textbf{74\% accuracy}.}
+    \resumeItem{Worked cross-functionally to analyze complex user needs, optimize \textbf{data models}, and implement .}
+    \resumeItem{Created \textbf{intuitive UI components}, integrated \textbf{ML models}, and ensured smooth \textbf{cloud deployment}, with reduced load time and scalable backed service. }
 \resumeItemListEnd
-
-
   \resumeSubHeadingListEnd
 
 %----------- PROJECTS -----------
@@ -168,46 +158,33 @@
   \vspace{3pt}
    \resumeSubHeadingListStart
     \resumeProjectHeading
-      {\textbf{E-Commerce Grocery Delivery Platform - Full Stack Web Application (ReactJS, JavaScript, Firebase, Tailwind CSS)}}{2024}
+      {\textbf{E-Commerce Grocery Delivery (ReactJS, JavaScript, Firebase, Tailwind CSS)} $|$ \emph{\href{https://github.com/satyam2x/E-Commerce-Grocery}{\color{blue}GitHub}}}{2024}
         \resumeItemListStart
-            \resumeItem{Developed scalable \textbf{full-stack} e-commerce application utilizing \textbf{Firebase}, implementing JWT authentication, NoSQL real-time database, and \textbf{Redux} state management for inventory of 50+ products, maintaining 99.9\% uptime and optimal performance metrics.}
-
+            \resumeItem{Developed a scalable \textbf{full-stack} E-commerce application using \textbf{Firebase} for authentication, and \textbf{Redux} state management for inventory of 50+ products.}
 
             \resumeItem{Enhanced \textbf{secure authentication system} with \textbf{role-based access control}, safeguarding \textbf{user data integrity} and reducing unauthorized access, while ensuring secure user sessions across \textbf{10+ grocery management features}.}
 
-            \resumeItem{Developed a \textbf{user-friendly landing page} with \textbf{enhanced search functionality}, reducing search time by \textbf{50\%} and improving overall \textbf{engagement} and \textbf{accessibility}.}
-
-            \resumeItem{Optimized application \textbf{responsiveness and scalability}, enhancing rendering efficiency and ensuring \textbf{100\% cross-device compatibility} for seamless performance across all screen sizes.}
-
+            \resumeItem{Developed a \textbf{user-friendly }landing page with \textbf{responsiveness and scalability}, enhancing rendering efficiency and ensuring \textbf{100\% cross-device compatibility} for seamless performance across all screen sizes.}
         \resumeItemListEnd
 
     \resumeProjectHeading
-    {\textbf{Social CloudChat App} \textbf{- (ReactJS, JavaScript, Firebase)}}{2024}
+    {\textbf{Social CloudChat App (ReactJS, JavaScript, Firebase)} $|$ \emph{\href{https://github.com/satyam2x/Chat-App}{\color{blue}GitHub}}}{2024}
     \resumeItemListStart
     \resumeItem{Developed a \textbf{full-stack real-time chat application} with \textbf{100\% secure user authentication}, incorporating robust form validation, image uploads, and efficient state management to ensure data privacy and seamless communication.}
     \resumeItem{Implemented an \textbf{advanced user search functionality} with \textbf{50\% faster real-time filtering}, allowing users to quickly find and connect.}
 
-    \resumeItem{Upgraded \textbf{real-time multimedia messaging} to handle \textbf{20+ concurrent users}, improving overall performance, and ensuring smooth, uninterrupted message delivery across all supported platforms.}
-
-    \resumeItem{Restructured an \textbf{intuitive, mobile-friendly UI/UX} with responsive layouts, interactive components, and maximized accessibility features, increasing user engagement by \textbf{35\%} and ensuring a \textbf{98\% consistency rate} across devices.}
-
+    \resumeItem{Restructured an \textbf{intuitive, mobile-friendly UI/UX} with responsive layouts, interactive components, and maximized accessibility features, increasing user engagement and ensuring a \textbf{98\% consistency rate} across devices.}
 \resumeItemListEnd
 
     \resumeProjectHeading
-    {\textbf{Capticon - Add Captions to Videos} \textbf{- (ReactJS, TailwindCSS)}}{2025}
+    {\textbf{Capticon - Add Captions to Videos (ReactJS, JavaScript, Firebase)} $|$ \emph{\href{https://github.com/satyam2x/CaptionCrafter}{\color{blue}GitHub}}}{2025}
     \resumeItemListStart
-    \resumeItem{Created a \textbf{enhanced
- and interactive web application} enabling users to input, edit, and manage \textbf{10+ captions} with precise timestamps, ensuring \textbf{99\% synchronization accuracy} with video playback for an overall viewing experience.}
+    \resumeItem{Created a \textbf{enhanced and interactive web application} enabling users to input, edit, and manage \textbf{10+ captions} with precise timestamps, ensuring \textbf{99\% synchronization accuracy} with video playback for an overall viewing experience.}
 
     \resumeItem{Engineered comprehensive functionalities for seamless caption management, ensuring precise timestamp synchronization, enhancing accessibility by \textbf{40\%}, and improving the viewing experience across \textbf{100+ videos}.}
 
-
     \resumeItem{Integrated video playback with synchronized captions, ensuring precise display timing and \textbf{reducing desynchronization issues by 30\%}, thereby enhancing the overall user experience.}
-    \resumeItem{Implemented a Git-based version control strategy, establishing best practices for code management, enhancing code quality, and reducing average pull request review time by \textbf{25\%}, accelerating feature delivery.}
-
-
 \resumeItemListEnd
-
 
 \resumeSubHeadingListEnd
 
@@ -216,14 +193,12 @@
   \vspace{2pt}
   \resumeSubHeadingListStart
     \item{
-    \textbf{Languages:}{ C, C++, JavaScript, HTML5, CSS3}\\
-    \textbf{Frameworks \& Libraries:}{ ReactJS,, 
-            Bootstrap, TailwindCSS, MaterialUI} \\
-    \textbf{Database \& Cloud:}{ SQL, MongoDB, Firebase, Cloud Deployment} \\
-    \textbf{Core Competencies:}{ Object-Oriented Programming (OOP), Data Structures and Algorithms (DSA), Database Management Systems (DBMS), Operating Systems (OS), Computer Networks (CN)} \\
+    \normalsize\textbf{Languages:}{ C++, JavaScript, Java, HTML5, CSS3}\\
+    \normalsize\textbf{Frameworks \& Libraries:}{ ReactJS, Bootstrap, TailwindCSS, MaterialUI} \\
+    \normalsize\textbf{Database \& Cloud:}{ SQL, MongoDB, Firebase, Cloud Deployment} \\
+    \normalsize\textbf{Core Competencies:}{ Object-Oriented Programming (OOP), Data Structures and Algorithms (DSA), Database Management Systems (DBMS), Operating Systems (OS), Computer Networks (CN)} \\
       
-    \textbf{Soft Skills:}{ Adaptability, Communication, Self-Motivation} \\
-        
+    \normalsize\textbf{Soft Skills:}{ Adaptability, Communication, Self-Motivation} \\
     }
 \resumeSubHeadingListEnd  
 
@@ -232,10 +207,10 @@
   \vspace{2pt}
   \resumeSubHeadingListStart
     \item{
-        \textbf{HighRadius:}{ Highway to HighRadius} \\
-        \textbf{Coursera:}{ Cloud Computing Security} \\
-        \textbf{HackerRank:}{ Problem Solving Basics and Intermediate from HackerRanks} \\
-        \textbf{MIMO:}{ Web Development, SQL} \\
+        \normalsize\textbf{HighRadius:}{ Highway to HighRadius} \\
+        \normalsize\textbf{Coursera:}{ Cloud Computing Security} \\
+        \normalsize\textbf{HackerRank:}{ Problem Solving Basics and Intermediate from HackerRanks} \\
+        \normalsize\textbf{MIMO:}{ Web Development, SQL} \\
     }
 \resumeSubHeadingListEnd  
 \end{document}
